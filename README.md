@@ -35,7 +35,7 @@ Select the notebook 'notebookname.ipynb' and open it with Google Colab using Con
 <br><br>
 
 
-### Local Installation (Tested on Mac OS X arm64 (Apple Silocon))
+### Local Installation (Tested on Mac OS X arm64 (Apple silicon))
 
 
 * Based on your architecture and OS type, download the corresponding **Miniforge3** from this [page](https://github.com/conda-forge/miniforge). 
