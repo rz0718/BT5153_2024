@@ -15,7 +15,23 @@ https://www.google.com/drive
 3. Open in Google Drive Folder 'BT5153_2023' and go to Folder 'BT5153_2023/codes/'
 Select the notebook 'notebookname.ipynb' and open it with Google Colab using Control Click + Open With Colaboratory
 
+4. If we need to load datasets from gdrive, we should run the following code at the beginning to specifiy the path
 
+```python
+   import sys, os
+   if 'google.colab' in sys.modules:
+      # mount google drive
+      from google.colab import drive
+      drive.mount('/content/gdrive')
+      # specify the path of the folder containing "file_name" by changing the lecture index:
+      lecture_index = '01'
+      path_to_file = '/content/gdrive/My Drive/BT5153_2023/codes/lab_lecture{}/'.format(lecture_index) 
+      print(path_to_file)
+      # change current path to the folder containing "file_name"
+      os.chdir(path_to_file)
+      !pwd
+   ```
+   For example, you can check this [notebook](https://github.com/rz0718/BT5153_2023/blob/main/codes/lab_lecture01/Best%20Practices%20to%20use%20Pandas.ipynb)
 <br><br>
 
 
