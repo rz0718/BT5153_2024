@@ -37,7 +37,7 @@ Miniforge is the community driven minimalistic conda installer. (open source ver
 
    # Install python libraries and environment
    conda env create -f env.yml
-   conda activate bt5153appliedml
+   conda activate bt5153env
 
    # Run the notebooks
    jupyter notebook
