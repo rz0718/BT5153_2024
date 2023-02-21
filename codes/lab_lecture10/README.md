@@ -1,0 +1,1 @@
+In the repo, we are trying to transform the jupyter notebook with data preparation and ML model training, into a fully working real-time API system. [The notebook](https://github.com/rz0718/BT5153_2023/blob/main/codes/lab_lecture07/Explain%20Spam%20Detection%20Using%20LIME%20and%20SHAP.ipynb) from week 7 would be used as the starting point.
