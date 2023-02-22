@@ -10,11 +10,11 @@ params_path = "params.yaml"
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
 
-app = Flask(__name__, static_folder=static_dir,template_folder=template_dir)
+app = Flask(__name__, static_folder=static_dir, template_folder=template_dir)
 
 
 class  Emptymessage(Exception):
-    def __init__(self, message="Values entered are not Numerical"):
+    def __init__(self, message="Receive empty data"):
         self.message = message
         super().__init__(self.message)
 
@@ -42,7 +42,6 @@ def form_response(dict_request):
     try:
         if validate_input(dict_request):
             data = dict_request.values()
-            #data = [list(str(data))]
             response = predict(data)
             return response
     except Emptymessage as e:
