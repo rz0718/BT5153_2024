@@ -47,8 +47,8 @@ Miniforge is the community driven minimalistic conda installer. (open source ver
    ./Miniforge3-$(osname)-$(archname).sh
 
    # Clone GitHub repo
-   git clone git@github.com:rz0718/BT5153_2023.git
-   cd BT5153_2023
+   git clone git@github.com:rz0718/BT5153_2024.git
+   cd BT5153_2024
 
    # Install python libraries and environment
    conda env create -f env.yml
